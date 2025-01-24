@@ -1,0 +1,149 @@
+:root {
+    --text-color: #131e34;
+    --link-color: #5e466b;
+    --background-color: #dbbaea;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+.noto-sans-jp-400> {
+  font-family: "Noto Sans JP", serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.emilys-candy-regular {
+    font-family: "Emilys Candy", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+body {
+    font-family: 'Emilys Candy', sans-serif;
+    background-color: var(--background-color);
+    max-width: 1700px;
+    margin: 0 auto;
+
+}
+
+a {
+    color: var(--link-color);
+    text-decoration: none;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 50px;
+    height: 80px;
+}
+
+nav .left a {
+    color: var(--text-color);
+    font-size: 45px;
+}
+
+nav .right a {
+    color: var(--text-color);
+    font-size: 22px;
+    margin: 0 100px;
+}
+nav .right a span {
+    margin-left: 5px;
+}
+
+.profile {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 300px;
+    margin: 50px 0;
+}
+
+.profile .text {
+    flex: 3;
+    color: var(--text-color);
+    
+}
+
+.profile .text h2 {
+    font-size: 48px;
+    color: var(--text-color);
+}
+
+.profile .profilepicture {
+    flex: 2;
+}
+
+.profile .profilepicture img {
+    width: 450px;
+    border-radius: 50%;
+    justify-content: right;
+}
+
+.backtojon {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 300px;
+    margin: 20px 0;
+}
+
+.backtojon a {
+    color: var(--link-color);
+    font-size: 20px;
+}
+
+footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+}
+footer p {
+    color: var(--background-color);
+}
+
+@media (max-width: 740px) {
+    .profile {
+        flex-direction: column-reverse;
+    }
+    .profile .profilepicture img {
+        width: 300px;
+    }
+}
+
+@media (max-width: 600px) {
+    nav {
+        padding: 0 20px;
+    }
+
+    nav .right a {
+        font-size: 20px;
+    }
+
+    nav .right a span {
+        display: none;
+    }
+
+    .profile {
+        padding: 0 20px;
+    }
+
+    .profile .text h2 {
+        font-size: 20px;
+    }
+
+    .profile .profilepicture img {
+        width: 300px;
+    }
+}
